@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+ *= require dataTables/jquery.dataTables
+ *= require_self
+*/
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+body {
+  background-image: url('http://res.cloudinary.com/thedailybeast/image/upload/v1492201529/articles/2014/03/30/the-timeless-beauty-of-baseball/140329-barnicle-baseball-tease_zrc3ar.jpg');
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+  font-family: 'Verdana';
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+tbody {
+  opacity: 0.9;
+}
+
+th {
+  text-align: center;
+}
+
+#stats-table {
+  width: 65% !important;
+}
+
+.dataTables_filter {
+  display: none !important;
+}
+
+.dataTables_length {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+.dataTable > thead > tr > th[class*="sort"]:after{
+  content: '' !important;
+}
+
+.dataTables_info {
+  border-radius: 15px;
+  color: black;
+  padding: 10px;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+
+.dataTables_paginate {
+  background-color: white;
+  border-radius: 15px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.odd {
+  background-color: #dadddf !important;
+}
+
+.row {
+  text-align: center;
+}
+
+.sorting,
+.sorting_asc,
+.sorting_desc {
+  background : none !important;
+}
