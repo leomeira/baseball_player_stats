@@ -19,7 +19,7 @@ class CreateTables < ActiveRecord::Migration
     create_table :divisions do |t|
       t.timestamps
       t.references :league
-      t.text :name, null: false, unique: true
+      t.text :name, null: false
     end
 
     create_table :teams do |t|

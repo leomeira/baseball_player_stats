@@ -16,7 +16,13 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
-  gem 'awesome_print'
-  gem 'pry'
   gem 'spring'
+end
+
+group :development, :test do
+  gem 'awesome_print'
+  gem 'factory_girl_rails', '4.8.0'
+  gem 'pry'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'shoulda-matchers'
 end

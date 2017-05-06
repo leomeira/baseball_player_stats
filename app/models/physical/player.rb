@@ -22,7 +22,10 @@ module Physical
     validates :sacrifice_hits, presence: true
     validates :steals, presence: true
     validates :struck_out, presence: true
-    validates :surname, presence: true, uniqueness: { scope: [:given_name, :team_id] }
+    validates :surname, presence: true, uniqueness: {
+      scope: [:given_name, :team_id], case_sensitive: false
+    }
+    validates :team_id, presence: true
     validates :triples, presence: true
     validates :walks, presence: true
   end

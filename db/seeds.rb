@@ -1,4 +1,4 @@
-file = File.read("/Users/leomeira/Workspace/baseball_player_stats/public/all_stats.json")
+file = File.read("./public/all_stats.json")
 data_hash = JSON.parse(file)
 
 ActiveRecord::Base.transaction do
